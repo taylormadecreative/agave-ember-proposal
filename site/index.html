@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agave &amp; Ember · Mexican Cuisine in Allen, Texas</title>
+<meta name="description" content="Upscale Mexican cuisine in Allen, Texas. Every sauce made from scratch, a full bar, and weekend brunch. Reserve a table at Agave & Ember.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0f0b08">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Agave & Ember · Mexican Cuisine">
+<meta property="og:description" content="Mexican cuisine that feels like home. 350 W. Exchange Pkwy #150, Allen, Texas.">
+<meta property="og:url" content="https://taylormadecreative.github.io/agave-ember-proposal/site/">
+<meta property="og:site_name" content="Agave &amp; Ember">
+<meta property="og:image" content="https://taylormadecreative.github.io/agave-ember-proposal/site/img/og.jpg?v=2">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Agave &amp; Ember Mexican Cuisine logo with the headline Mexican cuisine that feels like home, beside a candlelit private dining table">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Agave &amp; Ember · Mexican Cuisine">
+<meta name="twitter:description" content="Mexican cuisine that feels like home. Allen, Texas.">
+<meta name="twitter:image" content="https://taylormadecreative.github.io/agave-ember-proposal/site/img/og.jpg?v=2">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=7">
+<script>
+  (function () {
+    var d = document.documentElement, skip = false;
+    d.classList.add('js');
+    try { skip = sessionStorage.getItem('ae-intro') === '1'; } catch (e) {}
+    if (skip || location.hash || document.hidden || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      d.classList.add('no-intro');
+    } else {
+      try { sessionStorage.setItem('ae-intro', '1'); } catch (e) {}
+      setTimeout(function () { d.classList.add('intro-done'); }, 1100);
+    }
+  })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Agave & Ember Mexican Cuisine",
+  "servesCuisine": "Mexican",
+  "acceptsReservations": "True",
+  "email": "Managers@agave-ember.com",
+  "url": "https://agave-ember.com/",
+  "image": "https://taylormadecreative.github.io/agave-ember-proposal/site/img/og.jpg?v=2",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "350 W. Exchange Pkwy #150",
+    "addressLocality": "Allen",
+    "addressRegion": "TX",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "11:00", "closes": "21:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "11:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "23:59" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "21:00" }
+  ]
+}
+</script>
+</head>
+<body id="top">
+<a class="skip" href="#reserve">Skip to reservations</a>
+
+<!-- Intro: decorative, ends on a timer, never gates content -->
+<div class="intro" aria-hidden="true">
+  <canvas class="intro-embers"></canvas>
+  <img width="760" height="660" class="intro-logo" src="img/logo-full.webp" alt="">
+</div>
+
+<header class="site-header">
+  <nav class="nav nav-left" aria-label="Menu and bar">
+    <a href="#menu">Menu</a>
+    <a href="#brunch">Brunch</a>
+    <a href="#bar">The bar</a>
+  </nav>
+  <a class="brand" href="#top" aria-label="Agave &amp; Ember, back to top">
+    <img width="640" height="155" src="img/logo-wordmark.webp" alt="Agave &amp; Ember Mexican Cuisine">
+  </a>
+  <div class="header-right">
+    <nav class="nav" aria-label="About and visit">
+      <a href="#room">The room</a>
+      <a href="#catering">Catering</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="reserve-link" href="#reserve">Reserve</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <figure class="hero-plate">
+      <img width="1536" height="1024" src="img/hero-dining-1536.webp" srcset="img/hero-dining-1000.webp 1000w, img/hero-dining-1536.webp 1536w" sizes="100vw" alt="A candlelit private dining table set for ten, with gold-framed chairs, red bougainvillea and an arched wine wall glowing behind it" fetchpriority="high">
+    </figure>
+    <div class="hero-copy">
+      <h1 id="hero-title" class="hero-in" style="--d:0">Mexican cuisine<br>that feels<br>like home.</h1>
+      <div class="hero-foot">
+        <div class="hero-actions hero-in" style="--d:1">
+          <a class="btn btn-gold" href="#reserve">Reserve a table</a>
+          <a class="text-link" href="#menu">See the menu</a>
+        </div>
+        <p class="open-line hero-in" style="--d:2"><span data-open-line>Open seven days a week</span><br><a href="https://www.google.com/maps/dir/?api=1&amp;destination=350+W+Exchange+Pkwy+150+Allen+TX" target="_blank" rel="noopener">350 W. Exchange Pkwy, Allen, Texas</a></p>
+        <nav class="quick hero-in" style="--d:3" aria-label="On this page">
+          <a href="#brunch">Brunch</a>
+          <a href="#bar">The bar</a>
+          <a href="#menu">Menu</a>
+          <a href="#room">The room</a>
+          <a href="#catering">Catering</a>
+          <a href="#visit">Visit</a>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- KITCHEN -->
+  <section class="kitchen" aria-labelledby="kitchen-title">
+    <div class="wrap kitchen-head">
+      <h2 id="kitchen-title" class="rv">From our kitchen</h2>
+    </div>
+    <div class="wrap kitchen-grid">
+      <figure class="plate k-steak lit">
+        <img width="1536" height="1024" src="img/dish-mar-y-tierra-1536.webp" srcset="img/dish-mar-y-tierra-900.webp 900w, img/dish-mar-y-tierra-1536.webp 1536w" sizes="(max-width: 860px) 100vw, 62vw" alt="Mar y Tierra, a sliced 12 oz ribeye with four grilled shrimp, arugula salad, cherry tomatoes and charro beans" loading="lazy">
+        <figcaption><strong>Mar y Tierra</strong> Premium 12 oz ribeye, four grilled shrimp, arugula salad, cherry tomatoes, charro beans</figcaption>
+      </figure>
+      <figure class="plate k-camarones lit">
+        <img width="1024" height="1536" src="img/dish-camarones-1024.webp" srcset="img/dish-camarones-700.webp 700w, img/dish-camarones-1024.webp 1024w" sizes="(max-width: 860px) 88vw, 30vw" alt="Camarones Habaneros, shrimp in habanero sauce over spinach with white rice and vegetables" loading="lazy">
+        <figcaption><strong>Camarones Habaneros</strong> Sautéed shrimp in habanero sauce, white rice, vegetables</figcaption>
+      </figure>
+      <figure class="plate k-pollo lit">
+        <img width="1536" height="1024" src="img/dish-pollo-1536.webp" srcset="img/dish-pollo-900.webp 900w, img/dish-pollo-1536.webp 1536w" sizes="(max-width: 860px) 100vw, 50vw" alt="Pollo Agave &amp; Ember, grilled chicken with habanero sauce and sautéed spinach, with peppers, zucchini and white rice" loading="lazy">
+        <figcaption><strong>Pollo Agave &amp; Ember</strong> Grilled chicken breast, habanero sauce, sautéed spinach</figcaption>
+      </figure>
+      <div class="sauces rv">
+        <p class="sauces-label">Sauces you’ll taste</p>
+        <ul>
+          <li>Poblano cream</li>
+          <li>Habanero</li>
+          <li>Adobo de ajo</li>
+          <li>Tomatillo</li>
+          <li>Chipotle cream</li>
+        </ul>
+        <a class="text-link" href="#menu">Browse the full menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOM -->
+  <section class="room" id="room" aria-labelledby="room-title">
+    <figure class="room-wide lit">
+      <img width="1536" height="1024" src="img/room-dining-1536.webp" srcset="img/room-dining-1000.webp 1000w, img/room-dining-1536.webp 1536w" sizes="100vw" alt="The dining room at dusk: round glass tables on teak-root bases, gold-framed chairs and a back bar glowing amber" loading="lazy">
+    </figure>
+    <div class="room-grid">
+      <div class="room-copy">
+        <h2 id="room-title" class="rv">Stay a while.</h2>
+        <a class="btn btn-gold rv" href="#reserve">Reserve a table</a>
+      </div>
+      <figure class="room-guests lit">
+        <img width="1536" height="1024" src="img/room-guests-1536.webp" srcset="img/room-guests-900.webp 900w, img/room-guests-1536.webp 1536w" sizes="(max-width: 860px) 100vw, 62vw" alt="Two couples laughing and clinking margaritas over shared plates" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- BRUNCH -->
+  <section class="brunch" id="brunch" aria-labelledby="brunch-title">
+    <div class="brunch-grid">
+      <div class="brunch-copy">
+        <h2 id="brunch-title" class="rv">Weekend brunch</h2>
+        <p class="brunch-when rv">Saturday and Sunday from 9 AM</p>
+        <p class="rv">Pollito and Waffle Love, French toast with bananas and caramel, omelets with Vesuvio potatoes, and mimosas from the bar. Come hungry.</p>
+        <div class="rv brunch-actions">
+          <a class="btn btn-ink" href="#reserve" data-reserve-weekend>Book brunch</a>
+          <a class="text-link ink" href="#menu" data-open-tab="tab-brunch">See the brunch menu</a>
+        </div>
+      </div>
+      <figure class="brunch-photo lit">
+        <img width="1536" height="1024" src="img/brunch-waffle-1536.webp" srcset="img/brunch-waffle-900.webp 900w, img/brunch-waffle-1536.webp 1536w" sizes="(max-width: 860px) 100vw, 58vw" alt="Pollito and Waffle Love, fried chicken and a waffle with a cup of fresh fruit, on a sunlit glass table" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- BAR -->
+  <section class="bar" id="bar" aria-labelledby="bar-title">
+    <div class="wrap bar-grid">
+      <div class="bar-head">
+        <h2 id="bar-title" class="rv">The bar</h2>
+        <p class="rv">House margaritas, signature cocktails and fun mocktails.</p>
+        <a class="text-link rv" href="#menu" data-open-tab="tab-drinks">See the full bar menu</a>
+        <figure class="bar-photo lit">
+          <img width="1024" height="1536" src="img/drink-margarita-1024.webp" srcset="img/drink-margarita-700.webp 700w, img/drink-margarita-1024.webp 1024w" sizes="(max-width: 860px) 100vw, 38vw" alt="The Agave &amp; Ember Margarita, a peach-amber drink in a crystal rocks glass with a dried peach garnish" loading="lazy">
+        </figure>
+      </div>
+      <ul class="drinks">
+        <li class="rv"><span>Agave &amp; Ember Margarita</span> Hornitos Reposado, orange liqueur, peach fruit and agave nectar.</li>
+        <li class="rv"><span>Agave &amp; Ember Top Shelf</span> LALO Tequila Reposado, Cointreau, fresh-squeezed lime juice and agave nectar.</li>
+        <li class="rv"><span>La Pasión de Tony</span> Hornitos Plata, orange liqueur, fresh lime juice, passion fruit and agave nectar.</li>
+        <li class="rv"><span>Blanquita’s Flaca</span> Hornitos Plata, fresh lime juice and light simple syrup.</li>
+        <li class="rv"><span>Espresso Martini</span> Casamigos Silver Tequila, chocolate liqueur and espresso.</li>
+        <li class="rv"><span>Tony’s Mule</span> Woodford Reserve, Barrow’s Intense Ginger, orange juice, lemon juice, agave nectar and ginger beer.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu" aria-labelledby="menu-title">
+    <div class="wrap">
+      <div class="menu-card">
+        <div class="menu-head">
+          <h2 id="menu-title">The menu</h2>
+          <p class="menu-note">Every sauce is made from scratch in our kitchen.</p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Menu">
+          <button role="tab" id="tab-dinner" aria-controls="panel-dinner" aria-selected="true">Lunch &amp; dinner</button>
+          <button role="tab" id="tab-brunch" aria-controls="panel-brunch" aria-selected="false" tabindex="-1">Brunch</button>
+          <button role="tab" id="tab-drinks" aria-controls="panel-drinks" aria-selected="false" tabindex="-1">Bar</button>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-dinner" aria-labelledby="tab-dinner" tabindex="0">
+          <nav class="course-jump" aria-label="Jump to a section"><a href="#dinner-appetizers">Appetizers</a> <a href="#dinner-from-the-grill">From the Grill</a> <a href="#dinner-lets-taco-bout-it">Let’s Taco bout it!!</a> <a href="#dinner-del-mar">Del Mar</a> <a href="#dinner-kids">Kids</a> <a href="#dinner-soups-salads">Soups &amp; Salads</a> <a href="#dinner-mexicant-stop-eating">MexiCan’t Stop Eating</a> <a href="#dinner-postres">Postres</a> <a href="#dinner-sides-drinks">Sides &amp; Drinks</a></nav>
+          <div class="menu-cols">
+            <section class="course" id="dinner-appetizers">
+              <h3>Appetizers</h3>
+              <ul>
+                <li><span class="dish">Cinco Capa’s de Fuego</span><span class="price">18</span><p>Five-layer dip with refried beans, seasoned ground beef, Chile con queso, guacamole, and sour cream.</p></li>
+                <li><span class="dish">Queso de la Casa</span><span class="price">7</span><p>Rich, silky house-made Chile con queso, served with tortilla chips.</p></li>
+                <li><span class="dish">Sampler del Ember</span><span class="price">22</span><p>A tasting platter of beef nachos, chicken flautas, a chicken fajita quesadilla, and two bacon-wrapped jalapeños stuffed with queso fresco.</p></li>
+                <li><span class="dish">Queso Fundido al Comal</span><span class="price">13</span><p>Creamy cheese fondue topped with Mexican chorizo, sautéed mushrooms, and poblano rajas.</p></li>
+                <li><span class="dish">Guac’N’Roll</span><span class="price">9</span><p>House-made guacamole with fresh, ripe avocados, lime, cilantro, and onions.</p></li>
+                <li><span class="dish">Nachos del Carbon</span><span class="price">16</span><p class="opts">Bean and cheese option 12</p><p>Crispy tortilla chips layered with beans and melted cheese. Choose chicken fajita, beef fajita, or seasoned ground beef. Served with sour cream, guacamole, and jalapeños.</p></li>
+                <li><span class="dish">Quesadillas Tradicionales</span><span class="price"></span><p class="opts">Chicken 17 · Beef 18 · Shrimp 21</p><p>Flour tortilla filled with melted cheese and your choice of chicken, beef fajita, or shrimp.</p></li>
+                <li><span class="dish">Flautitas Doradas</span><span class="price">12</span><p>Rolled flautas filled with shredded chicken, served with guacamole and sour cream.</p></li>
+              </ul>
+            </section>
+            <section class="course" id="dinner-from-the-grill">
+              <h3>From the Grill</h3>
+              <ul>
+                <li><span class="dish">Molcajete Parrillada, Traditional for Two</span><span class="price">45</span><p>A sizzling molcajete with grilled cactus, sausage, chicken fajitas, and tablitas de Res over tomato sauce and Monterey cheese. Served with rice, charro beans, sour cream, guacamole, Pico de Gallo, and flour tortillas.</p></li>
+                <li><span class="dish">Fajitas del Ember</span><span class="price"></span><p class="opts">Chicken 20 · Beef 22 · Combo 21 · Shrimp 22</p><p>Sizzling fajitas served on a hot skillet with sautéed onions and bell peppers. Accompanied by rice, beans, guacamole, sour cream, Pico de Gallo, and shredded cheese.</p></li>
+                <li><span class="dish">Carne Asada a las Brazas</span><span class="price">20</span><p>Juicy grilled beef steak, served with grilled onion rings, rice, and charro beans.</p></li>
+                <li><span class="dish">Mar y Tierra</span><span class="price">38</span><p>Premium 12 oz ribeye cooked to your preferred temperature, paired with four grilled shrimp, arugula salad, cherry tomatoes, and charro beans.</p></li>
+                <li><span class="dish">Ember’s Ribeye</span><span class="price">30</span><p>12 oz ribeye cooked to your preferred temperature, paired with assorted vegetables.</p></li>
+                <li><span class="dish">Bone In New York Steak</span><span class="price">50</span><p>16 oz bone in New York strip steak cooked to preferred temperature, paired with assorted vegetables and mashed potatoes.</p></li>
+                <li><span class="dish">Pollo Agave &amp; Ember</span><span class="price">21</span><p>Grilled chicken breast topped with habanero sauce and sautéed spinach.</p></li>
+                <li><span class="dish">Guiso Viva México</span><span class="price">21</span><p>Chunks of beef steak cooked with onions, tomatoes, and herbs. Served with rice, beans, and flour or corn tortillas.</p></li>
+              </ul>
+            </section>
+            <section class="course" id="dinner-lets-taco-bout-it">
+              <h3>Let’s Taco bout it!!</h3>
+              <ul>
+                <li><span class="dish">Tacos de Ribeye</span><span class="price">26</span><p>Three grilled ribeye tacos on corn tortillas, garnished with microgreens and purple cabbage. Served with Mexican rice and charro beans.</p></li>
+                <li><span class="dish">Tacos al Carbon</span><span class="price">21</span><p>Three grilled beef or chicken fajita tacos topped with sautéed onions. Served with Mexican rice, charro beans, and a side of special sauce.</p></li>
+                <li><span class="dish">Tacos de Pescado</span><span class="price">18</span><p>Three tortillas filled with seasoned grilled tilapia, crunchy slaw, Mayotle sauce, microgreens, and radishes. Served with Mexican rice and refried beans.</p></li>
+                <li><span class="dish">Tacos de Camarón</span><span class="price">19</span><p>Three tortillas filled with seasoned, sautéed jumbo shrimp, crunchy slaw, Mayotle sauce, microgreens, and radishes. Served with Mexican rice and refried beans.</p></li>
+                <li><span class="dish">Crispy Tacos</span><span class="price">16</span><p>Crispy taco shells filled with ground beef or shredded chicken, lettuce, cheese, and tomatoes. Served with Mexican rice and refried beans.</p></li>
+                <li><span class="dish">Kids Taco Plate</span><span class="price">7</span><p>Served with rice and beans.</p></li>
+              </ul>
+            </section>
+            <section class="course" id="dinner-del-mar">
+              <h3>Del Mar</h3>
+              <ul>
+                <li><span class="dish">Pescado Jarocho</span><span class="price">18</span><p>Oven-baked tilapia fillet topped with zucchini, carrots, onions, jalapeños, and bell peppers. Finished with lemon butter cream and served with white rice.</p></li>
+                <li><span class="dish">Rubi Crown Salmon</span><span class="price">22</span><p>Premium grilled salmon, finished in a truffle sauce topped with pomegranate seeds, served with mashed potatoes and assorted vegetables.</p></li>
+                <li><span class="dish">Maximus Salmon</span><span class="price">22</span><p>Pan-seared salmon fillet finished with Ajillo sauce. Served with white rice and vegetables.</p></li>
+                <li><span class="dish">Camarones Habaneros</span><span class="price">22</span><p>Sautéed shrimp tossed in habanero sauce over a bed of romaine lettuce. Served with white rice and vegetables.</p></li>
+                <li><span class="dish">Camarones Adobo de Ajo</span><span class="price">22</span><p>Sautéed shrimp tossed in adobo de ajo sauce over romaine lettuce. Served with white rice and vegetables.</p></li>
+                <li><span class="dish">Cocktail de Camarón</span><span class="price">16</span><p>Cooked shrimp with homemade cocktail sauce.</p></li>
+                <li><span class="dish">Tostaditas de Ceviche</span><span class="price">16</span></li>
+                <li><span class="dish">Costa del Sur Mariscos</span><span class="price">24</span><p>A coastal seafood soup with tilapia, shrimp, mussels, clams, and lobster bites in a savory broth.</p></li>
+              </ul>
+            </section>
+            <section class="course" id="dinner-kids">
+              <h3>Kids</h3>
+              <ul>
+                <li><span class="dish">Chicken strips and fries</span><span class="price">7</span></li>
+                <li><span class="dish">Enchilada plate</span><span class="price">7</span><p>With rice and beans.</p></li>
+                <li><span class="dish">Cheese quesadilla</span><span class="price">7</span><p>With rice and beans.</p></li>
+                <li><span class="dish">Grilled chicken breast</span><span class="price">8</span><p>With rice and beans.</p></li>
+              </ul>
+            </section>
+            <section class="course" id="dinner-soups-salads">
+              <h3>Soups &amp; Salads</h3>
+              <ul>
+                <li><span class="dish">Sopa Azteca Traditional</span><span class="price"></span><p class="opts">Small 12 · Large 18</p><p>Authentic chicken broth with potatoes and carrots, topped with crispy tortilla strips and diced avocado.</p></li>
+                <li><span class="dish">Ember Taco Ensalada</span><span class="price">16</span><p>Crisp lettuce, beans, corn, mixed relish, and mixed cheese, topped with shredded chicken or ground beef.</p></li>
+                <li><span class="dish">Ensalada Tierra y Fuego</span><span class="price"></span><p class="opts">Chicken 16 · Beef 17 · Salmon or shrimp 21</p><p>Fresh lettuce and spinach tossed with cucumber, carrot ribbons, cherry tomatoes, and avocado slices.</p></li>
+                <li><span class="dish">Ensalada Acapulco</span><span class="price"></span><p class="opts">Chicken 16 · Beef fajita 17 · Salmon or shrimp 21</p><p>Romaine and spring mix with mandarin oranges, strawberries, and cucumbers, tossed with mango dressing and your choice of protein.</p></li>
+              </ul>
+            </section>
+            <section class="course" id="dinner-mexicant-stop-eating">
+              <h3>MexiCan’t Stop Eating</h3>
+              <ul>
+                <li><span class="dish">Enchiladas del Rancho</span><span class="price">15</span><p>Two enchiladas filled with chicken or beef topped with ranchero sauce, served with rice and beans.</p></li>
+                <li><span class="dish">Enchiladas Vrisa Verde</span><span class="price">15</span><p>Two enchiladas filled with chicken topped with tomatillo sauce, serve with rice and beans.</p></li>
+                <li><span class="dish">Chipotle Enchiladas</span><span class="price">15</span><p>Two enchiladas filled with chicken or beef, topped with chipotle cream sauce, served with rice and beans.</p></li>
+                <li><span class="dish">Enchiladas Poblana’s</span><span class="price">15</span><p>Two enchiladas filled with chicken or ground beef, topped with poblano cream sauce. Served with Mexican rice and refried beans.</p></li>
+                <li><span class="dish">Enchiladas de la Huerta</span><span class="price">14</span><p>Two veggie enchiladas filled with sautéed zucchini, spinach, mushrooms, and onions, topped with tomatillo sauce. Served with rice and refried beans.</p></li>
+                <li><span class="dish">Tostadas Plate</span><span class="price">16</span><p>Three tostadas with beans, lettuce, tomatoes, queso fresco, and avocado slices, topped with your choice of ground beef or shredded chicken.</p></li>
+              </ul>
+            </section>
+            <section class="course" id="dinner-postres">
+              <h3>Postres</h3>
+              <ul>
+                <li><span class="dish">Tres Leches</span><span class="price">11</span><p>Sponge cake soaked in three types of milk, topped with chocolate drizzle and crushed nuts.</p></li>
+                <li><span class="dish">Flan</span><span class="price">11</span><p>Creamy Spanish-style vanilla egg custard.</p></li>
+                <li><span class="dish">Churros</span><span class="price">11</span><p>Churros stuffed with cajeta and drizzled with dulce de leche.</p></li>
+              </ul>
+            </section>
+            <section class="course compact" id="dinner-sides-drinks">
+              <h3>Sides &amp; Drinks</h3>
+              <ul>
+                <li><span class="dish">Corn or flour tortillas</span><span class="price">3</span></li>
+                <li><span class="dish">Sour cream</span><span class="price">1</span></li>
+                <li><span class="dish">Jalapeños</span><span class="price">1</span></li>
+                <li><span class="dish">Cheese</span><span class="price">2</span></li>
+                <li><span class="dish">Rice</span><span class="price">3</span></li>
+                <li><span class="dish">Beans</span><span class="price">3</span></li>
+                <li><span class="dish">Chiles toreados</span><span class="price">3</span></li>
+                <li><span class="dish">Soft drinks, coffee, iced tea</span><span class="price">4</span></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-brunch" aria-labelledby="tab-brunch" tabindex="0" hidden>
+          <p class="panel-note">Saturday and Sunday from 9 AM</p>
+          <nav class="course-jump" aria-label="Jump to a section"><a href="#brunch-brunch-plates">Brunch Plates</a> <a href="#brunch-omelets">Omelets</a> <a href="#brunch-waffles-french-toast">Waffles &amp; French Toast</a> <a href="#brunch-little-brunchers">Little Brunchers</a> <a href="#brunch-sides">Sides</a> <a href="#brunch-from-the-bar">From the Bar</a></nav>
+          <div class="menu-cols">
+            <section class="course" id="brunch-brunch-plates">
+              <h3>Brunch Plates</h3>
+              <ul>
+                <li><span class="dish">Fueguito Ember</span><span class="price">16</span><p>Omelet mixed with cecina and salsa de tomatillo, served with refried beans and one tostadita with guacamole.</p></li>
+                <li><span class="dish">Chilaquil Feliz</span><span class="price">16</span><p>Crunchy tortilla chips tossed in roasted salsa roja or verde, finished with crema, queso fresco, onions and cilantro. Served with eggs your way and refried beans.</p></li>
+                <li><span class="dish">Huevos Divorciados</span><span class="price">14</span><p>Two eggs on two lightly fried corn tortillas, one topped with ranchero sauce and one with tomatillo sauce. Served with refried beans.</p></li>
+                <li><span class="dish">Huevos Rotos</span><span class="price">14</span><p>Two eggs over chorizo and potatoes with refried beans, finished with Mexican crema and queso fresco.</p></li>
+                <li><span class="dish">Classic</span><span class="price">12</span><p>Two eggs any style with Vesuvio marble potatoes and refried beans.</p></li>
+                <li><span class="dish">Rise and Shine</span><span class="price">18</span><p>Grilled beef steak with two eggs any style, garnished with cheese. Served with refried beans and Vesuvio marble potatoes.</p></li>
+                <li><span class="dish">Blanquita’s Favorite</span><span class="price">15</span><p>Wheat toast with fresh avocado spread, topped with two eggs any style and microgreens.</p></li>
+                <li><span class="dish">Chipotle Avomelt</span><span class="price">15</span><p>Two eggs over easy on toasted whole wheat bread with ham and melted cheddar, finished with a smoky chipotle drizzle and microgreens.</p></li>
+                <li><span class="dish">Enfrijoladas</span><span class="price">16</span><p>Three soft corn tortillas smothered in black bean sauce, topped with cecina, cheese, crema and red onions.</p></li>
+                <li><span class="dish">Taquitos</span><span class="price">14</span><p>Three flour tortillas filled with chorizo and scrambled eggs. Served with refried beans and Vesuvio marble potatoes.</p></li>
+                <li><span class="dish">Pollito and Waffle Love</span><span class="price">17</span><p>Hand-breaded fried chicken, seasoned to perfection and fried until crispy, paired with house-made waffles, drizzled with warm maple syrup or chipotle honey syrup and a touch of cinnamon butter for a bold sweet and savory flavor.</p></li>
+              </ul>
+            </section>
+            <section class="course" id="brunch-omelets">
+              <h3>Omelets</h3>
+              <ul>
+                <li><span class="dish">Omelet Loco</span><span class="price">15</span><p>Bacon, ham and cheese. Served with refried beans and Vesuvio marble potatoes.</p></li>
+                <li><span class="dish">Omelet Poblano</span><span class="price">14</span><p>Rajas, elotito, gouda and poblano sauce. Served with refried beans and Vesuvio marble potatoes.</p></li>
+                <li><span class="dish">Veggie Omelet</span><span class="price">13</span><p>Spinach, mushrooms, bell pepper and onions, with sliced avocado and a cup of fruit.</p></li>
+                <li><span class="dish">Fiesta Omelet</span><span class="price">14</span><p>Chorizo and pico de gallo topped with Monterey cheese. Served with refried beans and Vesuvio marble potatoes.</p></li>
+              </ul>
+            </section>
+            <section class="course" id="brunch-waffles-french-toast">
+              <h3>Waffles &amp; French Toast</h3>
+              <ul>
+                <li><span class="dish">French Toast</span><span class="price">12</span><p>Texas toast topped with bananas and strawberries, drizzled with caramel sauce.</p></li>
+                <li><span class="dish">Texas Pecan Waffle</span><span class="price">13</span><p>Baked with Texas pecans and topped with caramel sauce.</p></li>
+                <li><span class="dish">Strawberries and Cream Waffle</span><span class="price">13</span><p>Fresh strawberries, whipped cream and strawberry glaze.</p></li>
+                <li><span class="dish">Belgian Waffle</span><span class="price">11</span><p>Pure Belgian waffle, toasted, with powdered sugar.</p></li>
+              </ul>
+            </section>
+            <section class="course" id="brunch-little-brunchers">
+              <h3>Little Brunchers</h3>
+              <ul>
+                <li><span class="dish">Little Bruncher’s</span><span class="price">8</span><p>One egg any style, half a waffle and a slice of bacon.</p></li>
+                <li><span class="dish">Very Berry Wafflelito</span><span class="price">9</span><p>A waffle with fresh strawberries, blueberries, blackberries, whipped cream and honey.</p></li>
+                <li><span class="dish">Classic Scrambled and Bacon</span><span class="price">10</span><p>Two scrambled eggs with crispy bacon and toast.</p></li>
+                <li><span class="dish">French Toast</span><span class="price">7</span><p>Texas toast with bananas, strawberries and caramel sauce.</p></li>
+              </ul>
+            </section>
+            <section class="course compact" id="brunch-sides">
+              <h3>Sides</h3>
+              <ul>
+                <li><span class="dish">Vesuvio potatoes</span><span class="price">3</span></li>
+                <li><span class="dish">Single egg</span><span class="price">2</span></li>
+                <li><span class="dish">Side of bacon</span><span class="price">4</span></li>
+                <li><span class="dish">Cup of fruit</span><span class="price">4</span></li>
+                <li><span class="dish">Side of toast</span><span class="price">3</span></li>
+              </ul>
+            </section>
+            <section class="course" id="brunch-from-the-bar">
+              <h3>From the Bar</h3>
+              <ul>
+                <li><span class="dish">Classic Mimosa</span><span class="price">7</span><p>Our house champagne and orange juice.</p></li>
+                <li><span class="dish">Bloody Mary</span><span class="price">8</span><p>House vodka and our spicy mix.</p></li>
+                <li><span class="dish">Micheladas</span><span class="price">9</span><p>Your choice of beer.</p></li>
+                <li><span class="dish">Strawberry Mojito</span><span class="price">15</span><p>Fresh muddled strawberries, mint and lime with white rum, topped with sparkling soda.</p></li>
+                <li><span class="dish">Tequila Sunrise</span><span class="price">10</span><p>A vibrant, fruity cocktail made with tequila, orange juice and grenadine.</p></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-drinks" aria-labelledby="tab-drinks" tabindex="0" hidden>
+          <nav class="course-jump" aria-label="Jump to a section"><a href="#drinks-house-favorites">House Favorites</a> <a href="#drinks-signature-drinks">Signature Drinks</a> <a href="#drinks-wine">Wine</a> <a href="#drinks-spirits-beer">Spirits &amp; Beer</a> <a href="#drinks-fun-mocktails">Fun Mocktails</a></nav>
+          <div class="menu-cols">
+            <section class="course" id="drinks-house-favorites">
+              <h3>House Favorites</h3>
+              <ul>
+                <li><span class="dish">House Margarita</span><span class="price">13</span><p>100% agave silver tequila, orange liqueur and fresh lime juice. Frozen or on the rocks.</p></li>
+                <li><span class="dish">Mango Margarita</span><span class="price">14</span><p>Our frozen house margarita blended with fresh mango purée.</p></li>
+                <li><span class="dish">Strawberry Margarita</span><span class="price">14</span><p>Our frozen house margarita blended with fresh strawberry purée.</p></li>
+                <li><span class="dish">Swirl Margarita</span><span class="price">14</span><p>Frozen margarita swirled with sangria wine.</p></li>
+                <li><span class="dish">House Mojito</span><span class="price">13</span><p>Bacardi rum, muddled mint, lime juice.</p></li>
+                <li><span class="dish">Strawberry Mojito</span><span class="price">15</span><p>Fresh muddled mint, strawberries and lime juice blended with white rum.</p></li>
+                <li><span class="dish">Tequila Sunrise</span><span class="price">10</span><p>Orange juice, tequila and grenadine.</p></li>
+                <li><span class="dish">Strawberry Aperol Spritz</span><span class="price">15</span><p>Aperol, sparkling wine, fresh strawberries and a splash of soda water.</p></li>
+                <li><span class="dish">Limoncello Spritz</span><span class="price">13</span><p>Sparkling prosecco, lemon wheels and a splash of soda water.</p></li>
+                <li><span class="dish">Frozen Orange Spritz</span><span class="price">15</span><p>Orange juice, sparkling prosecco and a splash of Aperol.</p></li>
+              </ul>
+            </section>
+            <section class="course" id="drinks-signature-drinks">
+              <h3>Signature Drinks</h3>
+              <ul>
+                <li><span class="dish">Agave &amp; Ember Margarita</span><span class="price">16</span><p>Hornitos Reposado, orange liqueur, peach fruit and agave nectar.</p></li>
+                <li><span class="dish">Agave &amp; Ember Top Shelf</span><span class="price">16</span><p>LALO Tequila Reposado, Cointreau, fresh-squeezed lime juice and agave nectar.</p></li>
+                <li><span class="dish">Meltdown</span><span class="price">16</span><p>Our house margarita topped with Grand Marnier.</p></li>
+                <li><span class="dish">La Pasión de Tony</span><span class="price">15</span><p>Hornitos Plata, orange liqueur, fresh lime juice, passion fruit and agave nectar.</p></li>
+                <li><span class="dish">Blanquita’s Flaca</span><span class="price">15</span><p>Hornitos Plata, fresh lime juice and light simple syrup.</p></li>
+                <li><span class="dish">Espresso Martini</span><span class="price">15</span><p>Casamigos Silver Tequila, chocolate liqueur and espresso.</p></li>
+                <li><span class="dish">Silver Ranch</span><span class="price">14</span><p>Casamigos Silver Tequila, Topo Chico and lime juice.</p></li>
+                <li><span class="dish">Paloma Fresca</span><span class="price">14</span><p>El Jimador Blanco Tequila, grapefruit juice, lime juice and agave nectar.</p></li>
+                <li><span class="dish">Spicy Mango Margarita</span><span class="price">14</span><p>Hornitos Plata Tequila, fresh lime juice, jalapeño and agave nectar.</p></li>
+                <li><span class="dish">Luna Azul</span><span class="price">14</span><p>Casamigos, orange liqueur, curaçao and agave nectar.</p></li>
+                <li><span class="dish">Mezcal y Piña</span><span class="price">14</span><p>Mezcal, agave nectar and pineapple juice, topped with pineapple chunks.</p></li>
+                <li><span class="dish">Sexy Dali’s</span><span class="price">14</span><p>Deep Eddy Lime, Malibu Watermelon, lime juice, agave nectar, Sprite and grenadine.</p></li>
+                <li><span class="dish">Tony’s Mule</span><span class="price">14</span><p>Woodford Reserve, Barrow’s Intense Ginger, orange juice, lemon juice, agave nectar and ginger beer.</p></li>
+                <li><span class="dish">Martini Azul</span><span class="price">13</span><p>House gin, Mathilde Poire, blue curaçao, agave nectar and tonic water.</p></li>
+                <li><span class="dish">El Maxi Loco</span><span class="price">13</span><p>House vodka, Malibu Coconut, elderflower liqueur, lime juice and Coco Real.</p></li>
+                <li><span class="dish">Pink Cadillac</span><span class="price">12</span><p>House tequila, cranberry juice, orange liqueur and agave nectar.</p></li>
+                <li><span class="dish">Old Fashioned Jack</span><span class="price">12</span><p>Jack Daniel’s and our old fashioned blend.</p></li>
+              </ul>
+            </section>
+            <section class="course" id="drinks-wine">
+              <h3>Wine</h3>
+              <ul>
+                <li><span class="dish">House Wine</span><span class="price">12</span></li>
+                <li><span class="dish">Frontera Chardonnay</span><span class="price">12</span></li>
+                <li><span class="dish">Kendall-Jackson Vintner’s Reserve Chardonnay</span><span class="price">15</span><p>California.</p></li>
+                <li><span class="dish">Nimbus Sauvignon Blanc</span><span class="price">12</span><p>Chile.</p></li>
+                <li><span class="dish">Robert Mondavi Merlot</span><span class="price">14</span></li>
+                <li><span class="dish">Robert Mondavi Cabernet</span><span class="price">14</span></li>
+                <li><span class="dish">19 Crimes Red Blend</span><span class="price">14</span><p>Australia.</p></li>
+                <li><span class="dish">Ruffino Sparkling Rosé</span><span class="price">14</span><p>Italy.</p></li>
+                <li><span class="dish">Cruz Garcia Sangria Real</span><span class="price">11</span></li>
+              </ul>
+            </section>
+            <section class="course compact" id="drinks-spirits-beer">
+              <h3>Spirits &amp; Beer</h3>
+              <ul>
+                <li><span class="dish">Tito’s Vodka</span><span class="price">12</span></li>
+                <li><span class="dish">Tanqueray Gin</span><span class="price">12</span></li>
+                <li><span class="dish">Jack Daniel’s Tennessee Whiskey</span><span class="price">11</span></li>
+                <li><span class="dish">Imported bottle beers</span><span class="price">7</span></li>
+                <li><span class="dish">Imported or craft beers</span><span class="price">7</span></li>
+                <li><span class="dish">Domestic bottle beers</span><span class="price">6</span></li>
+                <li><span class="dish">Domestic craft beers</span><span class="price">6</span></li>
+              </ul>
+            </section>
+            <section class="course" id="drinks-fun-mocktails">
+              <h3>Fun Mocktails</h3>
+              <ul>
+                <li><span class="dish">Strawberry Vicky’s</span><span class="price">8</span><p>Strawberry with a touch of sweetness from simple syrup, finished with Sprite and a generous topping of whipped cream.</p></li>
+                <li><span class="dish">Piñata Blanca</span><span class="price">8</span><p>A tropical twist of coconut and lime with a hint of strawberry syrup, Sprite and whipped cream.</p></li>
+                <li><span class="dish">Sour Aiden’s</span><span class="price">8</span><p>For those who love tart flavors: a sweet and sour mix of fresh lime juice, Sprite for fizz, and Sour Patch Kids for a sour candy kick.</p></li>
+                <li><span class="dish">Breeze Me Chava</span><span class="price">8</span><p>Mango and lime with ginger beer, a fruity and spicy mocktail.</p></li>
+                <li><span class="dish">Dirty Dr Pepper or Dirty Coca-Cola</span><span class="price">8</span><p>Toasted coconut Monin with your choice of soda, topped with non-dairy creamer.</p></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <p class="menu-fine">Our sauces are gluten free; however, they may come in contact with items containing gluten during preparation. Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVE -->
+  <section class="reserve" id="reserve" aria-labelledby="reserve-title">
+    <div class="wrap reserve-grid">
+      <div class="reserve-intro">
+        <h2 id="reserve-title" class="rv">Reserve a table</h2>
+        <p class="rv">Date night, a birthday, a slow weekend brunch. Pick a day and a time, and we’ll email you to confirm.</p>
+        <p class="small rv">Parties of 9 or more, private events and celebrations: <a href="mailto:Managers@agave-ember.com?subject=Large%20party%20at%20Agave%20%26%20Ember">managers@agave-ember.com</a></p>
+      </div>
+
+      <noscript><p class="nojs-book">Online booking needs JavaScript. To reserve, email <a href="mailto:Managers@agave-ember.com?subject=Reservation%20request">managers@agave-ember.com</a> with your party size, date and time.</p></noscript>
+      <form class="booking" id="booking" method="post" action="#reserve" novalidate>
+        <div class="booking-steps">
+          <fieldset class="field">
+            <legend>Guests</legend>
+            <div class="party" role="radiogroup" aria-label="Number of guests" data-party></div>
+            <p class="hint" data-party-hint hidden>For 9 or more, email <a href="mailto:Managers@agave-ember.com?subject=Large%20party%20at%20Agave%20%26%20Ember">managers@agave-ember.com</a> and we’ll set up the room for you.</p>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend>Date</legend>
+            <div class="dates" data-dates role="radiogroup" aria-label="Date"></div>
+            <label class="other-date">Another date <input type="date" data-date-input></label>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend>Time <span class="legend-note" data-time-note></span></legend>
+            <div class="times" data-times role="radiogroup" aria-label="Time"></div>
+          </fieldset>
+        </div>
+
+        <div class="booking-details">
+          <div class="summary" data-summary aria-live="polite">Choose a date and time</div>
+          <div class="row2">
+            <label class="input">Full name<input name="name" autocomplete="name" required></label>
+            <label class="input">Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required></label>
+          </div>
+          <label class="input">Email<input name="email" type="email" autocomplete="email" required></label>
+          <label class="input">Occasion
+            <select name="occasion">
+              <option value="">None</option>
+              <option>Birthday</option>
+              <option>Anniversary</option>
+              <option>Date night</option>
+              <option>Business meal</option>
+              <option>Family celebration</option>
+            </select>
+          </label>
+          <label class="input">Allergies or requests<textarea name="notes" rows="2" placeholder="Gluten-free, high chair, a quiet table..."></textarea></label>
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="form-error" id="booking-error" data-error role="alert" hidden></p>
+          <button class="btn btn-gold btn-block" type="submit" data-submit>Send my request</button>
+        </div>
+
+        <div class="booking-done" data-done hidden tabindex="-1">
+          <h3 data-done-title>Request sent</h3>
+          <p data-done-body></p>
+          <div class="done-actions">
+            <button type="button" class="btn btn-line" data-ics>Add to calendar</button>
+            <button type="button" class="text-link" data-again>Make another reservation</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- CATERING -->
+  <section class="catering" id="catering" aria-labelledby="catering-title">
+    <div class="wrap catering-grid">
+      <figure class="catering-photo lit">
+        <img width="1536" height="1024" src="img/catering-spread-1536.webp" srcset="img/catering-spread-900.webp 900w, img/catering-spread-1536.webp 1536w" sizes="(max-width: 860px) 100vw, 56vw" alt="A catering spread of chicken and beef fajitas, enchiladas in poblano cream sauce, tacos, rice, charro beans, guacamole, pico de gallo and chips" loading="lazy">
+      </figure>
+      <div class="catering-copy">
+        <h2 id="catering-title" class="rv">Catering</h2>
+        <p class="catering-line rv">Our kitchen, at your next event.</p>
+        <p class="rv">Tell us the date, how many guests and what you’re celebrating, and we’ll take it from there.</p>
+        <a class="btn btn-ink rv" href="mailto:Managers@agave-ember.com?subject=Catering%20request">Ask about catering</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap visit-grid">
+      <div class="hours">
+        <h2 id="visit-title" class="rv">Hours</h2>
+        <p class="open-big" data-open-big>Open seven days a week</p>
+        <table class="hours-table">
+          <caption class="sr">Opening hours</caption>
+          <tbody>
+            <tr data-day="1"><th scope="row">Monday</th><td>11 AM to 9 PM</td></tr>
+            <tr data-day="2"><th scope="row">Tuesday</th><td>11 AM to 9 PM</td></tr>
+            <tr data-day="3"><th scope="row">Wednesday</th><td>11 AM to 9 PM</td></tr>
+            <tr data-day="4"><th scope="row">Thursday</th><td>11 AM to 9 PM</td></tr>
+            <tr data-day="5"><th scope="row">Friday</th><td>11 AM to 11 PM</td></tr>
+            <tr data-day="6"><th scope="row">Saturday</th><td>9 AM to midnight</td></tr>
+            <tr data-day="0"><th scope="row">Sunday</th><td>9 AM to 9 PM</td></tr>
+          </tbody>
+        </table>
+        <p class="small">Friday and Saturday, the kitchen closes at 10 PM. Brunch is served Saturday and Sunday from 9 AM.</p>
+      </div>
+
+      <div class="find">
+        <h2 class="rv">Find us</h2>
+        <address>
+          <span class="addr-big">350 W. Exchange Pkwy #150</span>
+          Allen, Texas
+        </address>
+        <div class="find-actions">
+          <a class="btn btn-gold" href="https://www.google.com/maps/dir/?api=1&amp;destination=350+W+Exchange+Pkwy+150+Allen+TX" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-line" href="https://maps.apple.com/?daddr=350+W+Exchange+Pkwy+150,+Allen,+TX" target="_blank" rel="noopener">Apple Maps</a>
+        </div>
+        <p class="contact">Questions, large parties and events<br><a href="mailto:Managers@agave-ember.com">managers@agave-ember.com</a></p>
+        <div class="map">
+          <iframe title="Map to Agave &amp; Ember, 350 W. Exchange Pkwy, Allen, Texas" src="https://www.google.com/maps?q=350+W+Exchange+Pkwy+150,+Allen,+TX&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <img width="760" height="660" class="footer-logo" src="img/logo-full.webp" alt="Agave &amp; Ember Mexican Cuisine" loading="lazy">
+    <div>
+      <p class="f-label">Visit</p>
+      <p>350 W. Exchange Pkwy #150<br>Allen, Texas</p>
+    </div>
+    <div>
+      <p class="f-label">Hours</p>
+      <p>Mon to Thu 11 AM to 9 PM<br>Fri 11 AM to 11 PM<br>Sat 9 AM to midnight<br>Sun 9 AM to 9 PM</p>
+    </div>
+    <div>
+      <p class="f-label">Contact</p>
+      <p><a href="mailto:Managers@agave-ember.com">managers@agave-ember.com</a></p>
+      <p><a href="#reserve">Reserve a table</a></p>
+      <p><a href="#catering">Catering</a></p>
+    </div>
+  </div>
+  <p class="wrap copyright">© 2026 Agave &amp; Ember Mexican Cuisine, Allen, Texas</p>
+</footer>
+
+<nav class="dock" aria-label="Quick actions">
+  <a href="#menu">Menu</a>
+  <a href="#visit">Hours</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=350+W+Exchange+Pkwy+150+Allen+TX" target="_blank" rel="noopener">Directions</a>
+  <a class="dock-cta" href="#reserve">Reserve</a>
+</nav>
+
+<dialog class="signup" id="signup" aria-labelledby="signup-title">
+  <div class="signup-card">
+    <button class="signup-close" type="button" aria-label="Close" data-signup-close><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    <div data-signup-ask>
+      <h2 id="signup-title" tabindex="-1" autofocus>Your next queso is on us.</h2>
+      <p class="signup-lead">Subscribe for specials and events, and your next Queso de la Casa is free.</p>
+      <form id="signup-form" novalidate>
+        <label class="input">Email<input name="email" type="email" autocomplete="email" inputmode="email" required></label>
+        <p class="form-error" id="signup-error" data-signup-error role="alert" hidden></p>
+        <button class="btn btn-ink btn-block" type="submit">Get my free queso</button>
+      </form>
+      <button class="signup-decline" type="button" data-signup-close>No thanks</button>
+      <p class="signup-fine">By subscribing, you agree to get emails from Agave &amp; Ember. Unsubscribe anytime.</p>
+    </div>
+    <div data-signup-done tabindex="-1" hidden>
+      <h2>You’re on the list.</h2>
+      <p class="signup-lead" data-signup-done-body></p>
+      <button class="btn btn-ink btn-block" type="button" data-signup-close>Back to the site</button>
+    </div>
+  </div>
+</dialog>
+
+<script src="app.js?v=7" defer></script>
+</body>
+</html>
