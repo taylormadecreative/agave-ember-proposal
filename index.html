@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agave &amp; Ember: what comes after the website</title>
+<meta name="description" content="A plan for Blanca at Agave &amp; Ember, from Nelson Taylor at Taylormade Creative.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#231a14">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Agave &amp; Ember: what comes after the website">
+<meta property="og:description" content="A plan for Blanca, from Nelson Taylor at Taylormade Creative.">
+<meta property="og:url" content="https://taylormadecreative.github.io/agave-ember-proposal/">
+<meta property="og:image" content="https://taylormadecreative.github.io/agave-ember-proposal/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Agave &amp; Ember Mexican Cuisine logo beside Enchiladas Poblanas">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://taylormadecreative.github.io/agave-ember-proposal/img/og.jpg">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=Gloock&family=Marcellus+SC&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root {
+  --char: oklch(0.14 0.012 50);
+  --espresso: oklch(0.18 0.018 50);
+  --espresso-2: oklch(0.22 0.022 52);
+  --line-dark: oklch(0.34 0.03 60);
+  --gold: oklch(0.80 0.12 78);
+  --gold-deep: oklch(0.70 0.12 72);
+  --ember: oklch(0.66 0.18 44);
+  --ember-deep: oklch(0.50 0.16 40);
+  --agave-deep: oklch(0.28 0.045 170);
+  --masa: oklch(0.955 0.02 85);
+  --masa-2: oklch(0.915 0.03 82);
+  --ink: oklch(0.22 0.02 50);
+  --ink-soft: oklch(0.40 0.025 55);
+  --text: oklch(0.94 0.018 82);
+  --muted: oklch(0.78 0.03 72);
+  --f-display: "Gloock", Georgia, serif;
+  --f-caps: "Marcellus SC", Georgia, serif;
+  --f-body: "Albert Sans", system-ui, sans-serif;
+  --gutter: clamp(20px, 5vw, 72px);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; overflow-x: clip; }
+body { margin: 0; overflow-x: clip; background: var(--espresso); color: var(--text); font: 400 1.0625rem/1.6 var(--f-body); -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 400; margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
+p { margin: 0; }
+ul { margin: 0; padding: 0; list-style: none; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 12px 26px; border-radius: 999px; font: 600 1.0625rem/1.2 var(--f-body); text-decoration: none; border: 1.5px solid transparent; cursor: pointer; transition: background-color .2s, color .2s, border-color .2s, transform .2s var(--ease); }
+.btn:active { transform: scale(.97); }
+.btn-gold { background: var(--gold); color: var(--char); }
+.btn-gold:hover { background: oklch(0.86 0.12 80); }
+.btn-line { border-color: var(--gold-deep); color: var(--text); }
+.btn-line:hover { background: oklch(0.80 0.12 78 / .14); }
+
+/* Hero */
+.hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: 100svh; }
+.hero-copy { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 28px; padding: clamp(32px, 6vw, 88px) var(--gutter); }
+.hero-logo { width: clamp(190px, 22vw, 290px); }
+.hero h1 { font-size: clamp(2.7rem, 5.2vw, 5.1rem); line-height: 1.03; max-width: 12em; }
+.hero-for { color: var(--muted); font-size: 1.125rem; max-width: 30em; }
+.hero-photo { position: relative; overflow: hidden; background: var(--char); }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+.js .hero-photo img { animation: unveil 1.3s var(--ease) both .15s; }
+@keyframes unveil { from { clip-path: inset(0 0 100% 0); transform: scale(1.07); } to { clip-path: inset(0); transform: scale(1); } }
+
+/* Where it stands */
+.stands { padding: clamp(56px, 8vw, 104px) var(--gutter); max-width: 1180px; margin-inline: auto; }
+.stands h2, .need h2 { font-size: clamp(2.1rem, 4vw, 3.2rem); line-height: 1.08; margin-bottom: 32px; }
+.stands-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px clamp(32px, 6vw, 80px); margin-bottom: 36px; }
+.stands h3 { font: 400 1.375rem/1.2 var(--f-caps); color: var(--gold); margin-bottom: 14px; }
+.stands li { position: relative; padding: 11px 0 11px 32px; border-top: 1px solid var(--line-dark); }
+.stands li::before { content: ""; position: absolute; left: 3px; top: 19px; width: 12px; height: 12px; border-radius: 50%; }
+.ready li::before { background: var(--gold); }
+.todo li::before { border: 2px solid var(--ember); }
+
+/* The menu card */
+.card { position: relative; margin-inline: clamp(10px, 3vw, 40px); padding: clamp(44px, 7vw, 96px) clamp(26px, 6vw, 88px); background: var(--masa); color: var(--ink); border-radius: 6px; }
+.card::before { content: ""; position: absolute; inset: 10px; border: 1px solid var(--gold-deep); border-radius: 3px; pointer-events: none; }
+.card-head { max-width: 40em; margin-bottom: clamp(30px, 5vw, 56px); }
+.card-head h2 { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.03; margin-bottom: 16px; }
+.card-head p { color: var(--ink-soft); font-size: 1.125rem; }
+
+.course { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 28px clamp(36px, 6vw, 88px); align-items: start; padding-block: clamp(36px, 5vw, 60px); border-top: 1px dotted oklch(0.62 0.05 70); }
+.when { display: block; font: 400 1.3125rem/1.2 var(--f-caps); color: var(--ember-deep); margin-bottom: 8px; }
+.course h3 { font-size: clamp(1.95rem, 3.3vw, 2.7rem); line-height: 1.08; margin-bottom: 14px; }
+.lede { font-size: 1.125rem; line-height: 1.55; margin-bottom: 18px; max-width: 36em; }
+.course ul { margin-bottom: 18px; max-width: 36em; }
+.course li { padding: 9px 0 9px 20px; position: relative; color: var(--ink-soft); border-top: 1px solid oklch(0.86 0.03 80); }
+.course li::before { content: ""; position: absolute; left: 2px; top: 19px; width: 7px; height: 7px; border-radius: 50%; background: var(--ember-deep); }
+.course li strong { color: var(--ink); font-weight: 600; }
+.note { color: var(--ink-soft); font-size: 1rem; max-width: 36em; margin-bottom: 20px; }
+
+.pick { display: none; align-items: center; justify-content: center; gap: 10px; width: 100%; max-width: 340px; min-height: 56px; padding: 12px 22px; border-radius: 999px; background: transparent; border: 2px solid var(--ember-deep); color: var(--ember-deep); font: 600 1.0625rem/1.2 var(--f-body); cursor: pointer; transition: background-color .2s, color .2s, border-color .2s, transform .25s var(--ease); }
+.js .pick { display: inline-flex; }
+.pick:hover { background: oklch(0.50 0.16 40 / .09); }
+.pick:active { transform: scale(.97); }
+.pick[aria-pressed="true"] { background: var(--agave-deep); border-color: var(--agave-deep); color: var(--masa); }
+.pick .on { display: none; }
+.pick[aria-pressed="true"] .on { display: inline; }
+.pick[aria-pressed="true"] .off { display: none; }
+.pick:focus-visible { outline-color: var(--ember-deep); }
+.picks { display: flex; flex-direction: column; gap: 10px; }
+
+figure { margin: 0; }
+figcaption { margin-top: 10px; font-size: .9375rem; color: var(--ink-soft); }
+
+/* Phone with the site */
+.phone { width: min(100%, 290px); margin-inline: auto; padding: 9px; background: var(--char); border-radius: 36px; }
+.phone-bar { display: flex; align-items: center; justify-content: center; height: 34px; margin-bottom: 7px; border-radius: 999px; background: var(--espresso-2); color: var(--text); font-size: .875rem; font-weight: 500; }
+.phone img { width: 100%; border-radius: 0 0 27px 27px; aspect-ratio: 39 / 66; object-fit: cover; object-position: top; }
+.fig-center figcaption { text-align: center; }
+
+/* Concept listing */
+.listing { background: var(--espresso); color: var(--text); border-radius: 16px; overflow: hidden; }
+.listing-photos { display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: 1fr 1fr; gap: 3px; height: 188px; }
+.listing-photos img { width: 100%; height: 100%; min-height: 0; object-fit: cover; }
+.listing-photos img:first-child { grid-row: span 2; }
+.listing-body { padding: 18px 20px 20px; }
+.listing-name { font: 400 1.625rem/1.1 var(--f-display); margin-bottom: 4px; }
+.listing-type { color: var(--muted); margin-bottom: 12px; }
+.listing-hours { font-size: .9375rem; color: var(--text); margin-bottom: 16px; }
+.listing-actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.listing-actions span { display: flex; align-items: center; justify-content: center; min-height: 40px; border-radius: 999px; border: 1px solid var(--gold-deep); font-size: .875rem; font-weight: 500; }
+.listing-actions span:last-child { background: var(--gold); border-color: var(--gold); color: var(--char); }
+
+/* Food photos */
+.plates { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px; }
+.plates img { width: 100%; object-fit: cover; border-radius: 4px; aspect-ratio: 1; grid-column: span 2; }
+.plates img:nth-child(-n+2) { grid-column: span 3; aspect-ratio: 5 / 4; }
+
+/* Report example */
+.report { background: var(--masa-2); border-radius: 14px; padding: 20px 20px 22px; }
+.report-title { font: 400 1.5rem/1.15 var(--f-display); margin-bottom: 4px; }
+.report-sub { color: var(--ink-soft); font-size: .9375rem; margin-bottom: 14px; }
+.report-row { display: grid; grid-template-columns: 8em minmax(0, 1fr); align-items: center; white-space: nowrap; gap: 12px; padding-block: 7px; font-size: .9375rem; font-weight: 500; }
+.report-bar { height: 12px; border-radius: 999px; background: oklch(0.86 0.03 80); overflow: hidden; }
+.report-bar i { display: block; height: 100%; border-radius: 999px; background: var(--ember-deep); }
+
+/* Ad concept */
+.ad { background: var(--espresso); color: var(--text); border-radius: 16px; overflow: hidden; max-width: 380px; }
+.ad img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.ad-body { padding: 16px 20px 20px; }
+.ad-name { color: var(--muted); font-size: .9375rem; margin-bottom: 2px; }
+.ad-line { font: 400 1.75rem/1.1 var(--f-display); margin-bottom: 14px; }
+.ad-cta { display: flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 999px; background: var(--gold); color: var(--char); font-weight: 600; }
+
+/* Update ticket */
+.ticket { background: #fff8ec; border: 1px solid oklch(0.86 0.03 80); border-radius: 10px; padding: 20px 22px 10px; }
+.ticket-title { font: 400 1.3125rem/1.2 var(--f-caps); color: var(--ember-deep); margin-bottom: 8px; }
+.ticket-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-block: 12px; border-top: 1px dotted oklch(0.62 0.05 70); }
+.ticket-name { font: 400 1.1875rem/1.2 var(--f-display); }
+.ticket-price { white-space: nowrap; font-weight: 600; }
+.ticket-price s { color: var(--ink-soft); font-weight: 400; margin-right: 8px; }
+
+/* Need + close */
+.need { padding: clamp(56px, 8vw, 104px) var(--gutter) 0; max-width: 1020px; margin-inline: auto; }
+.need li { padding: 16px 0; border-top: 1px solid var(--line-dark); font-size: 1.125rem; max-width: 44em; }
+.close { padding: clamp(56px, 8vw, 104px) var(--gutter) clamp(72px, 9vw, 120px); max-width: 1020px; margin-inline: auto; }
+.close-box { padding: clamp(28px, 5vw, 56px); border: 1px solid var(--gold-deep); border-radius: 8px; background: var(--espresso-2); }
+.close h2 { font-size: clamp(2.3rem, 4.6vw, 3.6rem); line-height: 1.05; margin-bottom: 18px; }
+.my-picks { margin-bottom: 20px; }
+.my-picks li { padding: 10px 0 10px 32px; position: relative; font-size: 1.125rem; border-top: 1px solid var(--line-dark); }
+.my-picks li::before { content: "✓"; position: absolute; left: 3px; top: 10px; color: var(--gold); font-weight: 600; }
+.none { color: var(--muted); margin-bottom: 20px; font-size: 1.125rem; }
+.close-copy { max-width: 36em; margin-bottom: 28px; font-size: 1.125rem; }
+.close-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.sign { padding: 0 var(--gutter) 44px; text-align: center; color: var(--muted); font-size: .9375rem; }
+.sign a { color: var(--text); text-underline-offset: 3px; }
+.has-tray .sign { padding-bottom: 120px; }
+
+/* Picks tray */
+.tray { position: fixed; z-index: 20; left: 50%; bottom: max(14px, env(safe-area-inset-bottom)); width: min(calc(100% - 24px), 560px); display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 10px 10px 10px 22px; background: var(--char); color: var(--text); border: 1px solid var(--gold-deep); border-radius: 999px; box-shadow: 0 14px 34px oklch(0.10 0.01 50 / .45); transform: translate(-50%, 150%); visibility: hidden; transition: transform .35s var(--ease), visibility .35s; }
+.tray.show { transform: translate(-50%, 0); visibility: visible; }
+.tray-count { font-weight: 600; white-space: nowrap; }
+.tray .btn { min-height: 46px; padding: 10px 20px; font-size: 1rem; white-space: nowrap; }
+.tray.bump .tray-count { animation: bump .4s var(--ease); }
+@keyframes bump { 40% { transform: scale(1.14); color: var(--gold); } }
+
+@media (max-width: 860px) {
+  .hero { grid-template-columns: minmax(0, 1fr); min-height: 0; }
+  .hero-copy { padding-block: 40px 34px; gap: 22px; }
+  .hero-photo { height: 66vw; max-height: 480px; }
+  .stands-grid, .course { grid-template-columns: minmax(0, 1fr); }
+  .pick { max-width: none; }
+}
+@media (max-width: 420px) {
+  .tray { padding-left: 16px; gap: 8px; }
+  .tray .btn { padding-inline: 16px; font-size: .9375rem; }
+  .report-row { grid-template-columns: 7.6em minmax(0, 1fr); gap: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-copy">
+    <img class="hero-logo" src="img/logo-wordmark.webp" alt="Agave &amp; Ember Mexican Cuisine" width="640" height="155">
+    <h1>The site is built. Now let’s get Allen to your tables.</h1>
+    <p class="hero-for">A plan for Blanca, from Nelson Taylor at Taylormade Creative.</p>
+    <a class="btn btn-gold" href="#next">See the plan</a>
+  </div>
+  <div class="hero-photo"><img src="img/crema-enchiladas.webp" alt="Enchiladas Poblanas with Mexican rice and refried beans" fetchpriority="high"></div>
+</header>
+
+<section class="stands" aria-labelledby="stands-title">
+  <h2 id="stands-title">Where the site stands</h2>
+  <div class="stands-grid">
+    <div class="ready">
+      <h3>Ready</h3>
+      <ul>
+        <li>Your revised dinner menu, plus brunch and bar</li>
+        <li>Hours, directions and a reservation form</li>
+        <li>Built to work on a phone as well as a computer</li>
+      </ul>
+    </div>
+    <div class="todo">
+      <h3>Still to do</h3>
+      <ul>
+        <li>It’s on a preview link. agave-ember.com still says Coming Soon.</li>
+        <li>It’s hidden from Google, so nobody can search their way to it yet.</li>
+        <li>The reservation form doesn’t send requests yet.</li>
+      </ul>
+    </div>
+  </div>
+  <a class="btn btn-line" href="https://taylormadecreative.github.io/agave-ember/" target="_blank" rel="noopener">Open the website</a>
+</section>
+
+<main class="card" id="next">
+  <div class="card-head">
+    <h2>What comes next</h2>
+    <p>These are in the order I’d do them, and you don’t need everything at once. Tap an add button on anything that feels right, and you can send me your list at the end.</p>
+  </div>
+
+  <article class="course">
+    <div>
+      <span class="when">First</span>
+      <h3>Elevate the food</h3>
+      <p class="lede">You want the food looking its best before a photo shoot happens. So I’d start with AI images now, then replace them with real photos when you’re ready.</p>
+      <ul>
+        <li><strong>AI images now:</strong> I start from your own dish photos and improve the lighting, plating and setting, so each dish still looks like what guests get.</li>
+        <li><strong>New dishes:</strong> the new steaks and the Rubi Crown Salmon don’t have photos on the site yet, so I’d need a quick phone photo of each from your kitchen.</li>
+        <li><strong>AI food video:</strong> short moving shots of your dishes for the website and social media.</li>
+        <li><strong>Real photos and video later:</strong> I shoot your dishes, drinks and dining room at the restaurant, and they replace the AI images.</li>
+      </ul>
+      <p class="note">We choose the dishes together, and you approve every image before it goes up.</p>
+      <div class="picks">
+        <button class="pick" type="button" aria-pressed="false" data-pick="AI food images"><span class="off">+ Add AI food images</span><span class="on">✓ AI food images added. Tap to remove</span></button>
+        <button class="pick" type="button" aria-pressed="false" data-pick="AI food video"><span class="off">+ Add AI food video</span><span class="on">✓ AI food video added. Tap to remove</span></button>
+        <button class="pick" type="button" aria-pressed="false" data-pick="Real food photo shoot"><span class="off">+ Add real photo shoot</span><span class="on">✓ Real photo shoot added. Tap to remove</span></button>
+      </div>
+    </div>
+    <figure>
+      <div class="plates">
+        <img src="img/waffles-sm.webp" alt="Pollito and Waffle Love" loading="lazy">
+        <img src="img/pescado-sm.webp" alt="Pescado Jarocho" loading="lazy">
+        <img src="img/guacamole-sm.webp" alt="Guac’N’Roll" loading="lazy">
+        <img src="img/diabla-sm.webp" alt="Camarones Habaneros" loading="lazy">
+        <img src="img/french-toast-sm.webp" alt="French toast with bananas and strawberries" loading="lazy">
+      </div>
+      <figcaption>Your own photos are the starting point</figcaption>
+    </figure>
+  </article>
+
+  <article class="course">
+    <div>
+      <span class="when">Second</span>
+      <h3>Go live on agave-ember.com</h3>
+      <p class="lede">Right now your domain says Coming Soon. This step puts the new site there and opens it to Google. The search and tracking steps depend on it.</p>
+      <ul>
+        <li>Your domain points to the new site and stays where it is.</li>
+        <li>Reservation requests go where you choose.</li>
+        <li>Your phone number, hours and address are set across the site.</li>
+      </ul>
+      <button class="pick" type="button" aria-pressed="false" data-pick="Go live on agave-ember.com"><span class="off">+ Add to my picks</span><span class="on">✓ Added. Tap to remove</span></button>
+    </div>
+    <figure class="fig-center">
+      <div class="phone">
+        <div class="phone-bar">agave-ember.com</div>
+        <img src="img/site-phone.jpg" alt="The Agave &amp; Ember menu on a phone" loading="lazy" width="780" height="1560">
+      </div>
+      <figcaption>Your site at your own address</figcaption>
+    </figure>
+  </article>
+
+  <article class="course">
+    <div>
+      <span class="when">Third</span>
+      <h3>Get found on Google and Maps</h3>
+      <p class="lede">This is local SEO, which means showing up when someone nearby searches for what you serve, like “Mexican restaurant in Allen” or “brunch in Allen.”</p>
+      <ul>
+        <li><strong>Google Business Profile:</strong> the listing with your hours, photos and directions that appears in Google Search and Maps.</li>
+        <li><strong>Apple Maps and Yelp:</strong> the same name, address, hours and phone number everywhere.</li>
+        <li><strong>Your website’s wording:</strong> page titles and text written for the searches guests make.</li>
+      </ul>
+      <p class="note">Nobody can promise the top spot on Google. This is the work that gives you a real shot at it.</p>
+      <button class="pick" type="button" aria-pressed="false" data-pick="Get found on Google and Maps"><span class="off">+ Add to my picks</span><span class="on">✓ Added. Tap to remove</span></button>
+    </div>
+    <figure>
+      <div class="listing">
+        <div class="listing-photos">
+          <img src="img/pescado-sm.webp" alt="" loading="lazy">
+          <img src="img/guacamole-sm.webp" alt="" loading="lazy">
+          <img src="img/diabla-sm.webp" alt="" loading="lazy">
+        </div>
+        <div class="listing-body">
+          <p class="listing-name">Agave &amp; Ember</p>
+          <p class="listing-type">Mexican restaurant in Allen, Texas</p>
+          <p class="listing-hours">Mon to Thu 11 to 9, Fri 11 to 11, Sat 9 to midnight, Sun 9 to 9</p>
+          <div class="listing-actions" aria-hidden="true"><span>Directions</span><span>Menu</span><span>Reserve</span></div>
+        </div>
+      </div>
+      <figcaption>A concept of what guests could see, not a live listing</figcaption>
+    </figure>
+  </article>
+
+  <article class="course">
+    <div>
+      <span class="when">Fourth</span>
+      <h3>See what’s working</h3>
+      <p class="lede">Tracking shows where your guests come from, so you know what’s worth doing again. It goes in the day the site goes live, so your first visitors count.</p>
+      <ul>
+        <li><strong>Google Analytics and Search Console:</strong> Google tools that show how many people visit and what they searched to find you.</li>
+        <li><strong>Meta Pixel and TikTok Pixel:</strong> small pieces of code that show who came from Facebook, Instagram or TikTok, and let you reach them with ads later if you choose.</li>
+        <li><strong>Tap counts:</strong> how often people tap Reserve, Directions, Call and Menu.</li>
+        <li><strong>Labeled links and QR codes:</strong> one for your social bios and one for each printed piece, so you can tell which brought people in.</li>
+        <li><strong>A one-page report every month,</strong> plus the privacy page these tools expect.</li>
+      </ul>
+      <p class="note">Everything is set up in your own accounts, with me added as an admin. It stays yours.</p>
+      <button class="pick" type="button" aria-pressed="false" data-pick="Tracking and a monthly report"><span class="off">+ Add to my picks</span><span class="on">✓ Added. Tap to remove</span></button>
+    </div>
+    <figure>
+      <div class="report" role="img" aria-label="An example monthly report showing guests by source: Google Search, Google Maps, Instagram, Facebook, TikTok and QR codes.">
+        <p class="report-title">Where guests came from</p>
+        <p class="report-sub">Your monthly report</p>
+        <div class="report-row"><span>Google Search</span><span class="report-bar"><i style="width:82%"></i></span></div>
+        <div class="report-row"><span>Google Maps</span><span class="report-bar"><i style="width:64%"></i></span></div>
+        <div class="report-row"><span>Instagram</span><span class="report-bar"><i style="width:48%"></i></span></div>
+        <div class="report-row"><span>Facebook</span><span class="report-bar"><i style="width:36%"></i></span></div>
+        <div class="report-row"><span>TikTok</span><span class="report-bar"><i style="width:24%"></i></span></div>
+        <div class="report-row"><span>QR codes</span><span class="report-bar"><i style="width:15%"></i></span></div>
+      </div>
+      <figcaption>Example layout only. Your real numbers fill this in.</figcaption>
+    </figure>
+  </article>
+
+  <article class="course">
+    <div>
+      <span class="when">Fifth</span>
+      <h3>Run ads</h3>
+      <p class="lede">Ads put your food in front of people nearby who haven’t found you yet. With tracking in place, you can see which ads lead to taps on Reserve, Directions and Call.</p>
+      <ul>
+        <li><strong>Facebook and Instagram:</strong> ads that show your food to people near the restaurant.</li>
+        <li><strong>Google:</strong> ads that appear when someone nearby searches for Mexican food or brunch.</li>
+        <li><strong>Built around what you want to push:</strong> brunch, a new dish or a private event.</li>
+        <li><strong>A plain report</strong> on what each ad brought in.</li>
+      </ul>
+      <p class="note">We set the budget together, and you approve every ad before it runs.</p>
+      <button class="pick" type="button" aria-pressed="false" data-pick="Ads"><span class="off">+ Add to my picks</span><span class="on">✓ Added. Tap to remove</span></button>
+    </div>
+    <figure>
+      <div class="ad">
+        <img src="img/waffles-sm.webp" alt="Pollito and Waffle Love" loading="lazy">
+        <div class="ad-body">
+          <p class="ad-name">Agave &amp; Ember</p>
+          <p class="ad-line">Weekend brunch in Allen</p>
+          <span class="ad-cta" aria-hidden="true">Reserve a table</span>
+        </div>
+      </div>
+      <figcaption>A concept of an ad, not a live one</figcaption>
+    </figure>
+  </article>
+
+  <article class="course">
+    <div>
+      <span class="when">Every month</span>
+      <h3>Keep it current</h3>
+      <p class="lede">Menus change, and yours already has since the site was built. Send me the change and I update it, so guests see the right dish at the right price.</p>
+      <ul>
+        <li>Menu, price and hours changes.</li>
+        <li>Specials, events and holiday hours.</li>
+        <li>New photos swapped in after a shoot.</li>
+      </ul>
+      <button class="pick" type="button" aria-pressed="false" data-pick="Monthly updates"><span class="off">+ Add to my picks</span><span class="on">✓ Added. Tap to remove</span></button>
+    </div>
+    <figure>
+      <div class="ticket">
+        <p class="ticket-title">From the November 5 update</p>
+        <div class="ticket-row"><span class="ticket-name">Mar y Tierra</span><span class="ticket-price"><s>27</s>38</span></div>
+        <div class="ticket-row"><span class="ticket-name">Bone In New York Steak</span><span class="ticket-price">New, 50</span></div>
+        <div class="ticket-row"><span class="ticket-name">Rubi Crown Salmon</span><span class="ticket-price">New, 22</span></div>
+        <div class="ticket-row"><span class="ticket-name">Corn or flour tortillas</span><span class="ticket-price"><s>1</s>3</span></div>
+      </div>
+      <figcaption>Changes already made from your revised menu</figcaption>
+    </figure>
+  </article>
+</main>
+
+<section class="need" aria-labelledby="need-title">
+  <h2 id="need-title">What I’d need from you</h2>
+  <ul>
+    <li>The login for agave-ember.com, or whoever can make the change with me.</li>
+    <li>The address, phone number and hours you want shown everywhere.</li>
+    <li>Where reservation requests should go.</li>
+    <li>If you run ads, a monthly budget you’re comfortable with.</li>
+    <li>Access to your Google, Facebook, Instagram and TikTok accounts. If one doesn’t exist yet, we’ll set it up in your name.</li>
+  </ul>
+</section>
+
+<section class="close" id="picks" aria-labelledby="picks-title">
+  <div class="close-box">
+    <h2 id="picks-title">Your picks</h2>
+    <div aria-live="polite">
+      <p class="none" id="none">Nothing picked yet. Tap an add button on any step above.</p>
+      <ul class="my-picks" id="my-picks" hidden></ul>
+    </div>
+    <p class="close-copy">Pricing depends on what you pick, so we’ll go over it together. Let me know what you think and we’ll take it from there.</p>
+    <div class="close-actions">
+      <a class="btn btn-gold" id="send" href="sms:+18177071291">Text Nelson</a>
+      <a class="btn btn-line" href="tel:+18177071291">Call (817) 707-1291</a>
+    </div>
+  </div>
+</section>
+
+<p class="sign">Nelson Taylor, <a href="https://www.taylormadecreative.net" target="_blank" rel="noopener">Taylormade Creative</a></p>
+
+<div class="tray" id="tray" role="region" aria-label="Your picks">
+  <span class="tray-count" id="tray-count">0 picked</span>
+  <a class="btn btn-gold" id="tray-send" href="sms:+18177071291">Text Nelson my picks</a>
+</div>
+
+<script>
+(function () {
+  var NUMBER = 'sms:+18177071291?&body=';
+  var picks = [];
+  var buttons = [].slice.call(document.querySelectorAll('.pick'));
+  var tray = document.getElementById('tray');
+  var trayCount = document.getElementById('tray-count');
+  var traySend = document.getElementById('tray-send');
+  var send = document.getElementById('send');
+  var none = document.getElementById('none');
+  var list = document.getElementById('my-picks');
+  var closeInView = false;
+
+  function message() {
+    if (!picks.length) return 'Hi Nelson, this is Blanca from Agave & Ember. I have a question about the plan.';
+    return 'Hi Nelson, this is Blanca from Agave & Ember. I’d like to talk about: ' + picks.join(', ') + '.';
+  }
+  function render() {
+    var href = NUMBER + encodeURIComponent(message());
+    send.href = href;
+    traySend.href = href;
+    send.textContent = picks.length ? 'Text Nelson my picks' : 'Text Nelson';
+    trayCount.textContent = picks.length + ' picked';
+    none.hidden = picks.length > 0;
+    list.hidden = picks.length === 0;
+    list.innerHTML = '';
+    picks.forEach(function (p) { var li = document.createElement('li'); li.textContent = p; list.appendChild(li); });
+    tray.classList.toggle('show', picks.length > 0 && !closeInView);
+    document.body.classList.toggle('has-tray', picks.length > 0);
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var name = b.getAttribute('data-pick');
+      var on = b.getAttribute('aria-pressed') !== 'true';
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      if (on) picks.push(name); else picks = picks.filter(function (p) { return p !== name; });
+      picks.sort(function (x, y) {
+        var names = buttons.map(function (el) { return el.getAttribute('data-pick'); });
+        return names.indexOf(x) - names.indexOf(y);
+      });
+      render();
+      tray.classList.remove('bump'); void tray.offsetWidth; tray.classList.add('bump');
+    });
+  });
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (e) { closeInView = e[0].isIntersecting; render(); }, { threshold: 0.25 }).observe(document.getElementById('picks'));
+  }
+  render();
+})();
+</script>
+</body>
+</html>
